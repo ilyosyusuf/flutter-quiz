@@ -1,4 +1,4 @@
-package com.ibrakhimi.flutter_quiz
+package com.ibrakhimi.flutterbasicquiz
 
 import io.flutter.embedding.android.FlutterActivity
 
