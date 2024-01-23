@@ -17,14 +17,14 @@ class QuizResult extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Provider.of<ThemeProvider>(context).isDarkMode ? Colors.black45 : Colors.white, // Background color
-        borderRadius: BorderRadius.circular(16.0), // Border radius
+        color: Provider.of<ThemeProvider>(context).isDarkMode ? Colors.black45 : Colors.white, 
+        borderRadius: BorderRadius.circular(16.0), 
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.5), // Shadow color
+            color: Colors.grey.withOpacity(0.5), 
             spreadRadius: 5,
             blurRadius: 7,
-            offset: Offset(0, 3), // Changes position of shadow
+            offset: Offset(0, 3), 
           ),
         ],
       ),

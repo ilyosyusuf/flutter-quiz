@@ -263,7 +263,7 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   void initState() {
     super.initState();
-    _questions.shuffle(); // Shuffle questions when the quiz starts
+    _questions.shuffle();
   }
 
   @override
@@ -311,12 +311,10 @@ class _QuizScreenState extends State<QuizScreen> {
     _showSnackbar(message, color);
 
     if (isCorrect) {
-      // Handle correct answer logic (e.g., score increment)
       setState(() {
         _correctCount++;
       });
     } else {
-      // Handle incorrect answer logic
       setState(() {
         _incorrectCount++;
       });
@@ -326,7 +324,7 @@ class _QuizScreenState extends State<QuizScreen> {
       _currentIndex++;
 
       if (_currentIndex < _questions.length) {
-        _questions.shuffle(); // Shuffle questions for the next round
+        _questions.shuffle(); 
       }
     });
   }
@@ -336,7 +334,7 @@ class _QuizScreenState extends State<QuizScreen> {
       _currentIndex = 0;
       _correctCount = 0;
       _incorrectCount = 0;
-      _questions.shuffle(); // Shuffle questions when the quiz restarts
+      _questions.shuffle(); 
     });
   }
 
